@@ -3,6 +3,7 @@
 :root {
     --gray: #667085;
     --dark-red: #8E2424;
+    --black: #101828;
 }
 
 /* RESET */
@@ -23,13 +24,20 @@ button {
     font: inherit;
 }
 
-/*HEADER*/
-
+/*GERAIS*/
 html {
     font-size: 16px;
     font-family: "Inter", sans-serif;
+    color: var(--black);
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+/*HEADER*/
 .cabecalho {
     display: flex;
     align-items: center;
@@ -52,8 +60,6 @@ h1 {
 }
 
 .menu {
-    list-style: none;
-    display: flex;
     gap: 2rem;
 }
 
@@ -86,7 +92,6 @@ h1 {
 }
 
 /*MAIN*/
-
 main {
     display: grid;
     justify-content: center;
@@ -118,7 +123,6 @@ main {
 }
 
 /*METRICAS*/
-
 .metricas {
     display: flex;
     justify-content: center;
@@ -177,4 +181,31 @@ main {
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--gray);
+}
+
+.vagas-abertas {
+    justify-self: center;
+}
+
+.vagas-abertas h2 {
+    font-size: 1.25rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.vaga-aberta {
+    border: 1px solid #EAECF0;
+    border-radius: 1rem;
+    padding: 1.5rem 30rem 1.75rem  1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.vaga-aberta p {
+    font-size: 1.13rem;
+    margin-bottom: 2rem;
+}
+
+.vaga-aberta ul {
+    color: var(--gray);
+    gap: 1.5rem;
+    font-weight: 500;
 }
