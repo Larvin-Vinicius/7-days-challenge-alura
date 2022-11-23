@@ -30,11 +30,24 @@ html {
     font-family: "Inter", sans-serif;
 }
 
-header {
+.cabecalho {
     display: flex;
     align-items: center;
     padding: 1.5rem 10rem;
     gap: 5rem;
+    font-weight: 500;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h1 {
+
+    color: var(--gray);
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -53,7 +66,7 @@ header {
     color: var(--dark-red);
 }
 
-header button {
+.cabecalho button {
     border: none;
     background-color: inherit;
     color: gray;
@@ -63,12 +76,12 @@ header button {
     justify-content: space-around;
 }
 
-header button:hover {
+.cabecalho button:hover {
     background-color: var(--dark-red);
     color: #fff;
 }
 
-.header-item-2 {
+.cabecalho-item-2 {
     flex-grow: 2;
 }
 
@@ -76,6 +89,7 @@ header button:hover {
 
 main {
     display: grid;
+    justify-content: center;
 }
 
 .sobre-nos {
@@ -131,6 +145,36 @@ main {
     line-height: 1.5rem;
     color: var(--gray);
     max-width: 17.5rem;
-
 }
 
+.vagas {
+    display: grid;
+    justify-content: center;
+}
+
+.vagas header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding-bottom: 4rem;
+}
+
+.vagas header h2 {
+    background: rgba(142, 36, 36, 0.05);
+    font-size: 0.875rem;
+    color: var(--dark-red);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.vagas header h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.vagas header p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--gray);
+}
