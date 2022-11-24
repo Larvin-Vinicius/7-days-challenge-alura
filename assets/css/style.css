@@ -20,7 +20,7 @@ img {
     max-width: 100%;
 }
 
-button {
+button, input {
     font: inherit;
 }
 
@@ -35,6 +35,13 @@ ul {
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+button {
+    color: gray;
+    padding: 0.6rem 1.1rem;
+    transition: .5s;
+    border-radius: .5rem;
 }
 
 /*HEADER*/
@@ -75,10 +82,6 @@ h1 {
 .cabecalho button {
     border: none;
     background-color: inherit;
-    color: gray;
-    padding: 0.6rem 1.1rem;
-    transition: .5s;
-    border-radius: .5rem;
     justify-content: space-around;
 }
 
@@ -218,6 +221,7 @@ main {
     min-width: 1216px;
     justify-self: center;
     border-radius: 1rem;
+    margin-bottom: 6rem;
 }
 
 .depoimentos h2 {
@@ -251,3 +255,43 @@ main {
     color: var(--gray);
 }
 
+.cadastro {
+    justify-self: center;
+    text-align: center;
+    background-color: #F9FAFB;
+    min-width: 100vw;
+    padding: 6rem;
+}
+
+.cadastro h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.cadastro p {
+    font-size: 1.25rem;
+    color: var(--gray);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.cadastro input {
+    border: 1px solid #D0D5DD;
+    padding: 0.75rem 0.875rem 0.75rem 1rem;
+    margin: 0 1rem 2rem 0;
+    border-radius: 0.5rem;
+    min-width: 22.5rem;
+}
+
+.cadastro button {
+    background-color: var(--dark-red);
+    color: #fff;
+    border: 1px solid var(--dark-red);
+    border-radius: 0.5rem;
+}
+
+.cadastro span {
+    font-weight: 400;
+    color: #98A2B3;
+}
