@@ -154,6 +154,7 @@ main {
 .vagas {
     display: grid;
     justify-content: center;
+    margin-bottom: 6rem;
 }
 
 .vagas header {
@@ -196,7 +197,7 @@ main {
     border: 1px solid #EAECF0;
     border-radius: 1rem;
     padding: 1.5rem 30rem 1.75rem  1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .vaga-aberta p {
@@ -209,3 +210,44 @@ main {
     gap: 1.5rem;
     font-weight: 500;
 }
+
+.depoimentos {
+    background-color: rgba(142, 36, 36, 0.05);
+    text-align: center;
+    padding: 4rem;
+    min-width: 1216px;
+    justify-self: center;
+    border-radius: 1rem;
+}
+
+.depoimentos h2 {
+    color: var(--dark-red);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.depoimento {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    max-width: 1088px;
+    padding-bottom: 2rem;
+}
+
+.depoimentos img {
+    margin: 0 auto;
+    max-width: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.colaboradora-nome {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.colaboradora-funcao {
+    font-size: 0.875rem;
+    color: var(--gray);
+}
+
