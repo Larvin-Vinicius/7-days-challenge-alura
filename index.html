@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,74 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>OptimusTech</title>
 </head>
+
 <body>
-    <header class="cabecalho">
-        <div class="logo">
+    <header class="header c-gray">
+        <div class="header__logo">
             <img src="assets/img/logo.svg" alt="Logo">
-            <h1>OptimusTech</h1>
+            <h1 class="header__logo__title font-s-18 font-w-500">OptimusTech</h1>
         </div>
-        <nav class=" cabecalho-item-2">
-            <ul class="menu">
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Produtos</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Recursos</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Sobre nós</a></li>
+        <nav class="header__menu font-s-16 font-w-500">
+            <ul class="header__menu__nav">
+                <li>
+                    <a class="header__menu__nav__item" href="http://" target="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="header__menu__nav__item" href="http://" target="#">
+                        Produtos
+                    </a>
+                </li>
+                <li>
+                    <a class="header__menu__nav__item" href="http://" target="#">
+                        Recursos
+                    </a>
+                </li>
+                <li>
+                    <a class="header__menu__nav__item" href="http://" target="#">
+                        Sobre nós
+                    </a>
+                </li>
             </ul>
         </nav>
         <div>
-            <button>Entrar</button>
-            <button>Cadastrar</button>
+            <button class="button button--white">Entrar</button>
+            <button class="button button--red">Cadastrar</button>
         </div>
     </header>
-    <main>
-        <section class="sobre-nos">
-            <h2>Sobre nós</h2>
-            <h3>Por que somos diferentes?</h3>
-            <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+    <main class="content">
+        <section class="about-us">
+            <h2 class="font-s-16 font-w-600 m-bt1">Sobre nós</h2>
+            <h3 class="font-s-48 font-w-600 m-bt2">Por que somos diferentes?</h3>
+            <p class="about-us__text c-gray font-s-20 font-w-400">Nós focamos nos detalhes de tudo que fazemos. Tudo
+                para ajudar as empresas de todo o mundo a se
+                concentrarem naquilo que é realmente importante para elas.</p>
         </section>
-        <div class="metricas">
-            <section class="metricas-secao">
-                <h2><span>400+</span> Projetos concluídos</h2>
-                <p>Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+        <div class="metrics">
+            <section>
+                <h2 class="metrics__title font-s-18">
+                    <span class="metrics__title--number font-s-60 font-w-600 c-red">400+</span>Projetos concluídos
+                </h2>
+                <p class="metrics__text font-w-400 c-gray">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+            </section>
+            <section>
+                <h2 class="metrics__title font-s-18">
+                    <span class="metrics__title--number font-s-60 font-w-600 c-red">100+</span>Colaboradores
+                </h2>
+                <p class="metrics__text font-w-400 c-gray">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+            </section>
+            <section>
+                <h2 class="metrics__title font-s-18">
+                    <span class="metrics__title--number font-s-60 font-w-600 c-red">20k</span>Downloads
+                </h2>
+                <p class="metrics__text font-w-400 c-gray">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
             </section>
             <section class="metricas-secao">
-                <h2><span>100+</span> Colaboradores</h2>
-                <p>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
-            </section>
-            <section class="metricas-secao">
-                <h2><span>20k</span> Downloads</h2>
-                <p>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
-            </section>
-            <section class="metricas-secao">
-                <h2><span>500+</span> Reviews 5 estrelas</h2>
-                <p>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+                <h2 class="metrics__title font-s-18">
+                    <span class="metrics__title--number font-s-60 font-w-600 c-red">500+</span>Reviews 5 estrelas
+                </h2>
+                <p class="metrics__text font-w-400 c-gray">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
             </section>
         </div>
         <section class="vagas">
@@ -101,7 +129,8 @@
         </section>
         <section class="depoimentos">
             <h2>Veja o que nossos colaboradores falam sobre nós</h2>
-            <p class="depoimento">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</p>
+            <p class="depoimento">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar
+                todo tipo de auxílio possível.</p>
             <figure>
                 <img src="assets/img/Avatar.png" alt="Avatar de um colaborador">
                 <figcaption>
@@ -114,11 +143,12 @@
             <h2>Acompanhe as nossas oportunidades</h2>
             <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
             <form action="#">
-                <input type="email" placeholder="Seu e-mail" >
+                <input type="email" placeholder="Seu e-mail">
                 <button>Cadastrar</button>
             </form>
             <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
         </section>
     </main>
 </body>
+
 </html>

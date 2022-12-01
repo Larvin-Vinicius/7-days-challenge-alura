@@ -16,4 +16,5 @@
 Vou utilizar esse projeto para aplicar alguns conceitos que estou estudando.
 - [ ] Responsividade
 - [ ] Arquitetura CSS
+- [ ] Utilizar uma BRANCH para as alterações
   
